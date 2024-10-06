@@ -1,0 +1,107 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: url("Screenshot 2024-10-05 135541.png") no-repeat center center fixed; /* Local image path */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Main Section */
+main {
+    flex-grow: 1;
+}
+
+.welcome-section {
+    margin-top: 150px;
+    animation: fadeIn 2s ease-in;
+}
+
+.welcome-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 22px;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.explore-btn {
+    background-color: rgba(0, 71, 171, 0.8); /* Cobalt Blue with transparency */
+    border: none;
+    color: white; /* Ensure the text color is white */
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 40px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 3px rgba(0, 71, 171, 0.7);
+    transition: all 0.3s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+.explore-btn:hover {
+    box-shadow: 0px 0px 25px 5px rgba(0, 71, 171, 0.9);
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(0, 31, 84, 0.8); /* Navy Blue with transparency */
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+    margin-top: auto; /* Pushes footer down */
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

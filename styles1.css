@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+}
+
+/* Close button adjustment */
+.close-btn {
+  position: absolute;
+  top: 15px;  /* Adjusted to stay within the top of the sidebar */
+  right: 15px;  /* Keeps it away from the edges */
+  color: #2880A8;  /* Bright cosmic blue */
+  font-size: 23px;
+  cursor: pointer;
+  z-index: 1000;  /* Ensures it's on top of other elements */
+}
+
+/* Ensure the search bar stays below the close button */
+.search-box {
+  position: relative;
+  width: 100%;
+  padding: 15px 30px;
+  background: #10234D;  /* Matching header background */
+  margin-top: 50px;  /* Adjust to make space for the close button */
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 35px;
+  background: #0A0D2D;  /* Deep space blue */
+  color: white;
+  border: 1px solid #1D4B75;  /* Deep sky blue */
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: #2880A8;  /* Bright cosmic blue */
+}
+
+
+canvas { display: block; }
+
+body{
+ min-height: 100vh;
+ background: #0A0D2D; /* Deep space blue */
+ color: white;
+ background-size: cover;
+ background-position: center;
+}
+
+.side-bar{
+ background: #0D1B39; /* Almost-black deep space */
+ backdrop-filter: blur(15px);
+ width: 250px;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ left: -250px;
+ overflow-y: auto;
+ transition: 0.6s ease;
+ transition-property: left;
+}
+.side-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.side-bar.active{
+ left: 0;
+}
+
+h1{
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 13px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: #2880A8; /* Bright cosmic blue */
+}
+
+.side-bar .menu{
+ width: 100%;
+ margin-top: 30px;
+}
+
+.side-bar .menu .item{
+ position: relative;
+ cursor: pointer;
+}
+
+.side-bar .menu .item a{
+ color: #fff;
+ font-size: 16px;
+ text-decoration: none;
+ display: block;
+ padding: 5px 30px;
+ line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+ background: #1D4B75; /* Deep sky blue */
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+ margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+ position: absolute;
+ right: 0;
+ margin: 20px;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+ background: #10234D; /* Midnight blue */
+ display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+ padding-left: 80px;
+ color: #2880A8; /* Bright cosmic blue for submenu links */
+}
+
+.rotate{
+ transform: rotate(90deg);
+}
+
+/* .close-btn{
+ position: absolute;
+ color: #2880A8;
+ font-size: 23px;
+ right:  0px;
+ margin: 15px;
+ cursor: pointer;
+} */
+
+.menu-btn{
+ position: absolute;
+ color: #FFFFFF;
+ font-size: 35px;
+ margin: 25px;
+ cursor: pointer;
+}
+
+.main{
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 50px;
+}
+
+.main h1{
+ color: rgba(255, 255, 255, 0.8); /* Soft white text */
+ font-size: 60px;
+ text-align: center;
+ line-height: 80px;
+}
+
+@media (max-width: 900px){
+ .main h1{
+   font-size: 40px;
+   line-height: 60px;
+ }
+}
+
+img{
+  width: 100px;
+  margin: 15px;
+  border-radius: 50%;
+  margin-left: 70px;
+  border: 3px solid #1D4B75; /* Deep sky blue for image border */
+}
+
+header{
+  background: #10234D; /* Midnight blue for header */
+}

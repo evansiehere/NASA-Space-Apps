@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>three.js</title>
+    <link rel="stylesheet" href="styles1.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+      <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+      }
+    </style>
+    <title>Solar System : Explore the 3D Solar System</title>
+    <meta name="author" content="ankitjha2603" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="The Solar System 3D Visualization project is an interactive web-based application that allows users to explore the Solar System in a three-dimensional environment. The project is developed using the Three.js library, which provides powerful tools for creating 3D content on the web. Users can witness the rotation of planets around the Sun and their self-rotation, as well as enjoy the beauty of space in this immersive experience."
+    />
+    <meta
+      name="keywords"
+      content="three.js, solar system, 3D, space, planets, astronomy, stars, sun, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto"
+    />
+
+    <meta
+      property="og:title"
+      content="Solar System : Explore the 3D Solar System"
+    />
+    <meta
+      property="og:description"
+      content="The Solar System 3D Visualization project is an interactive web-based application that allows users to explore the Solar System in a three-dimensional environment. The project is developed using the Three.js library, which provides powerful tools for creating 3D content on the web. Users can witness the rotation of planets around the Sun and their self-rotation, as well as enjoy the beauty of space in this immersive experience."
+    />
+    <meta
+      property="og:url"
+      content="https://ankitjha2603.github.io/solar-system3D/"
+    />
+    <meta property="og:type" content="website" />
+    <!-------------------------->
+    <!-- Sitemap -->
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="https://ankitjha2603.github.io/sitemap.xml"
+    />
+    <!-------------------------->
+
+    <!----------------------------------------------------------------------------->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4J64SC1QY7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-4J64SC1QY7");
+    </script>
+    <!--Google verification--->
+    <meta
+      name="google-site-verification"
+      content="5QsjbXuM1buDwEtnxWDKN9dE1qgf_dgz646EdwUxSWg"
+    />
+
+    <!----------------------------------------------------------------------------->
+    <link rel="icon" type="image/png" href="./image/solar-system.png" />
+    <script type="text/javascript" src="./min.js/dat.gui.min.js"></script>
+  </head>
+  <body>
+    <style>
+      body{
+
+        background-image: ('stars.jpeg');
+
+      }
+    </style>
+    <script src="./js/solarSystem.js" type="module"></script>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+ 
+ 
+    <div class="side-bar">
+     <header>
+       <div class="close-btn">
+         <i class="fas fa-times"></i>
+       </div>
+     </header>
+   
+     <!-- Search bar -->
+     <div class="search-box">
+       <input type="text" id="search-menu" placeholder="Search...">
+       <i class="fas fa-search search-icon"></i>
+     </div>
+   
+     <div class="space">
+       <br><br>
+     </div>
+      <div class="menu">
+        <div class="item"><a href="index.html"></i>Home</a></div>
+        <div class="item">
+          <a class="sub-btn">Planets<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Mercury</a>
+            <a href="#" class="sub-item">Venus</a>
+            <a href="#" class="sub-item">Earth</a>
+            <a href="#" class="sub-item">Mars</a>
+            <a href="#" class="sub-item">Jupiter</a>
+            <a href="#" class="sub-item">Saturn</a>
+            <a href="#" class="sub-item">Uranus</a>
+            <a href="#" class="sub-item">Neptune</a>
+            <a href="#" class="sub-item">Pluto</a>
+          </div>
+        </div>
+        <div class="item">
+         <a class="sub-btn">Near Earth Comets<i class="fas fa-angle-right dropdown"></i></a>
+         <!-- <div class="sub-menu">
+           <a href="#" class="sub-item">NEC1</a>
+           <a href="#" class="sub-item">NEC2</a>
+           <a href="#" class="sub-item">NEC3</a>
+         </div> -->
+       </div>
+       <div class="item">
+         <a class="sub-btn">Near Earth Asteroids<i class="fas fa-angle-right dropdown"></i></a>
+         <!-- <div class="sub-menu">
+           <a href="#" class="sub-item">NEA1</a>
+           <a href="#" class="sub-item">NEA2</a>
+           <a href="#" class="sub-item">NEA3</a>
+         </div> -->
+       </div>
+       <div class="item">
+         <a class="sub-btn">Potentially Hazardous Asteroids<i class="fas fa-angle-right dropdown"></i></a>
+         <!-- <div class="sub-menu">
+           <a href="#" class="sub-item">PHA1</a>
+           <a href="#" class="sub-item">PHA2</a>
+           <a href="#" class="sub-item">PHA3</a>
+         </div> -->
+       </div>
+    </div>
+ <script src="scripts1.js"></script>
+  
+  </body>
+</html>
